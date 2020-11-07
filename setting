@@ -1,0 +1,4 @@
+#!/bin/sh
+export src=./src/com/example/helloandroid/*.java
+export api=./src/com/example/helloandroid/android.jar
+export java=./jre/bin/
