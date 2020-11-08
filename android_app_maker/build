@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+function install(){
+	cd bin
+	gcc android_app_create.c
+	mv a.out android_app_create
+}
+function clear(){
+	cd bin
+	rm android_app_create.c
+}
+if [ "$1" == "install" ]; then
+	install
+elif [ "$1" == "clear" ]; then
+	clear
+else
+	printf 没有目标，停止。
+fi
